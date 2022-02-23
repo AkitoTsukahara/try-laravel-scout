@@ -30,6 +30,8 @@ ps:
 	docker-compose ps
 app:
 	docker-compose exec php bash
+migrate:
+	docker-compose exec app php artisan migrate
 fresh:
 	docker-compose exec app php artisan migrate:fresh --seed
 seed:
@@ -53,7 +55,7 @@ cbf:
 db:
 	docker-compose exec db bash
 sql:
-	docker-compose exec db bash -c 'mysql -u $$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE'
+	docker-compose exec db bash -c 'mysql -u $$MYSQL_USER -p$$MYSQL_PASSWORD -D $$MYSQL_DATABASE'
 node:
 	docker-compose exec node ash
 npm:
