@@ -1,0 +1,6 @@
+/docker/db/*
+!.gitkeep
+.idea
+/server/node_modules/*
+/server/vendor/*
+/server/storage/*
