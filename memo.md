@@ -1,0 +1,29 @@
+- Algolia
+    - https://www.algolia.com/
+    - 全文検索ツール
+        - algolia search
+        - algolia recommend
+    - 検索ツールの人気では2022時点で3位
+        - https://financesonline.com/site-search/
+        - SaSSとして使うならこんな感じ
+        - OSSとして活用するなら、ElasticSearchやOpenSearchが候補に上がってくる
+        - ElasticSearchはOpneSearchになっている
+            - 詳しいことは知らないがAWSとなんか揉めて決別したらしい
+            - 最近アップデートタスクがあったけれど、ドライバーを変える位でいけた
+            - https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/developerguide/what-is.html
+    - 検索APIを提供するだけでなく、分析、ABテストもできる可視化ツールが付いてくる
+        - パーソナライズされたレコメンド
+        - https://www.algolia.com/products/search-and-discovery/analytics/?tab=overview
+        - https://www.algolia.com/products/search-and-discovery/ab-testing/
+        - https://www.algolia.com/products/search-and-discovery/personalization/
+        - まあ、有効利用できればの話ではあるのだが。。。
+            - Elastic SearchにもKibanaという可視化ツールがあるがそこまで使い切れていない印象
+    - 今回取り上げたのはLaravel Scoutで簡単導入できるから
+        - Algolia以外にもmeilisearchというサービス連携もできるらしい
+            - 個人的にロードマップがあるのは良いなと思った
+        - https://www.meilisearch.com/
+    - 接続先のDBにはfirebaseの使えるよ
+    - 料金体系
+        - 10000レコード
+        - 月に10000レコード検索まで無料
+        - それ以上は1000件ごとに$1増えていく
